@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk-beeswax</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <div class="promo">
+          <h2><span>Dapatkan diskon 30%</span><br />untuk hari ini.</h2>
+        </div>
+        <div class="logo">
+          <img src="img/acbb5a6c-5fb7-4374-82d1-a29d313ab512_removalai_preview.png" alt="Logo Bumi" />
+        </div>
+        <div class="deskripsi">
+          <p>
+            Beeswax Wraps dari alam untuk Anda dan keluarga.<br />
+            100% alami, ramah lingkungan, dan dapat digunakan kembali.
+          </p>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+      <div class="search-box">
+        <input type="text" placeholder="Cari produk..." />
+        <button type="submit">🔍</button>
+      </div>
+    </nav>
+    <section id="products">
+      <br>
+          <h2>Produk Kami</h2>
+    </br>
+          <div class="product-grid">
+            <div class="product">
+              <img src="img/beswax sampel1.jpg" alt="Produk 1" />
+              <h3>Produk 1</h3>
+              <p>Deskripsi singkat produk 1.</p>
+              <p>Harga: Rp100.000</p>
+              <button class="add-to-cart" data-name="Produk 1" data-price="100000">+ Keranjang</button>
+            </div>
+
+            <div class="product">
+              <img src="img/beeswax sampel 2.jpg" alt="Produk 2" />
+              <h3>Produk 2</h3>
+              <p>Deskripsi singkat produk 2.</p>
+              <p>Harga: Rp150.000</p>
+              <button class="add-to-cart" data-name="Produk 2" data-price="150000">+ Keranjang</button>
+            </div>
+
+            <div class="product">
+              <img src="img/produk 3.jpg" alt="Produk 3" />
+              <h3>Produk 3</h3>
+              <p>Deskripsi singkat produk 3.</p>
+              <p>Harga: Rp200.000</p>
+              <button class="add-to-cart" data-name="Produk 3" data-price="200000">+ Keranjang</button>
+          </div>
+            <div class="product">
+              <img src="img/produk4.jpg" alt="Produk 4" />
+              <h3>Produk 4</h3>
+              <p>Deskripsi singkat produk 4.</p>
+              <p>Harga: Rp250.000</p>
+              <button class="add-to-cart" data-name="Produk 4" data-price="250000">+ Keranjang</button>
+            </div>
+
+            <div class="product">
+              <img src="img/produk 5.jpg" alt="Produk 5" />
+              <h3>Produk 5</h3>
+              <p>Deskripsi singkat produk 5.</p>
+              <p>Harga: Rp300.000</p>
+              <button class="add-to-cart" data-name="Produk 5" data-price="300000">+ Keranjang</button>
+            </div>
+
+            <div class="product">
+              <img src="img/produk6.jpg" alt="Produk 6" />
+              <h3>Produk 6</h3>
+              <p>Deskripsi singkat produk 6.</p>
+              <p>Harga: Rp350.000</p>
+              <button class="add-to-cart" data-name="Produk 6" data-price="350000">+ Keranjang</button>
+            </div>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <p>&copy; 2025 BumiBee Market. Hak cipta dilindungi undang-undang.</p>
+    </footer>
+
+
+    
+<!-- Cart Counter -->
+<div id="cart-notification">
+  🛒 <span id="cart-count">0</span> item
+</div>
+
+<!-- Script Add to Cart -->
+<script>
+  let cartCount = 0;
+
+  const addToCartButtons = document.querySelectorAll(".product button");
+
+  addToCartButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      cartCount++;
+      document.getElementById("cart-count").textContent = cartCount;
+      alert("Produk berhasil ditambahkan ke keranjang!");
+    });
+  });
+</script>
+
+  </body>
+</html>
